@@ -1,7 +1,8 @@
 // importações do framework do Angular
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'; // esse é o cara!
+import { HttpClientModule } from '@angular/common/http'; // esse é o cara do webservice
+import { FormsModule } from '@angular/forms'; // esse é o cara dos formularios
 
 // importações específicas da minha aplicação
 import { AppRoutingModule } from './app-routing.module';
@@ -25,7 +26,8 @@ import { BuscaComponent } from './busca/busca.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

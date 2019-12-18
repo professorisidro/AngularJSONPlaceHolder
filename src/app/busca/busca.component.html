@@ -1,1 +1,21 @@
-<p>busca works!</p>
+<div class="row">
+    <div class="col-md-6">
+        <input type="number" placeholder="Digite o ID" [(ngModel)]="idBusca">
+        <span *ngIf='_msgErro'>{{_msgErro}}</span>
+    </div>
+    <div class="col-md-6">
+        <button (click)="pesquisar();">Pesquisar</button>
+    </div>
+</div>
+<div *ngIf="_user != null">
+    <div class="row">
+        <div class="col-md-12">
+            <h5>User:</h5>
+            {{_user.name}}<br>
+            {{_user.username}}<br>
+            {{_user.phone}}<br>
+            {{_user.website}}<br>
+
+        </div>
+    </div>
+</div>

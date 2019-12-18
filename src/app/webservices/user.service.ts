@@ -11,4 +11,12 @@ export class UserService {
   recuperaListaDeUsers(){
     return this.http.get("https://jsonplaceholder.typicode.com/users");
   }
+  recuperaUserPeloID(id:number){
+    return this.http.get("https://jsonplaceholder.typicode.com/users/"+id);
+    
+    /* forma alternativa usando expression language
+    return this.http.get(`https://jsonplaceholder.typicode.com/users/${id}`);
+    */
+    
+  }
 }
