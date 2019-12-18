@@ -1,0 +1,24 @@
+<div *ngFor='let _user of listaDeUsers'>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4>({{_user.id}}){{_user.name}} </h4>
+            <p>
+                <strong>username: </strong>{{_user.username}}<br>
+                <strong>email:</strong>{{_user.email}}<br>
+                <strong>phone:</strong>{{_user.phone}}<br>
+                <strong>website:</strong> {{_user.website}}<br>
+            </p>
+            <h5>Address</h5>
+            <p>{{_user.address.street}} - {{_user.address.suite}} <br>
+               {{_user.address.city}} - ZIP: {{_user.address.zipcode}} <br>
+               <strong>Geolocation:</strong> lat:{{_user.address.geo.lat}} / lng: {{_user.address.geo.lng}}
+            </p>
+            <h5>Company</h5>
+            <p>{{_user.company.name}} - {{_user.company.catchPhrase}}<br>
+               Segment: {{_user.company.bs}}
+            </p>
+            <hr>
+        </div>
+    </div>
+</div>
