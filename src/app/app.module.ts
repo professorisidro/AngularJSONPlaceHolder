@@ -12,6 +12,7 @@ import { TituloComponent } from './titulo/titulo.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ListagemComponent } from './listagem/listagem.component';
 import { BuscaComponent } from './busca/busca.component';
+import { TarefaComponent } from './tarefa/tarefa.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { BuscaComponent } from './busca/busca.component';
     TituloComponent,
     NavbarComponent,
     ListagemComponent,
-    BuscaComponent
+    BuscaComponent,
+    TarefaComponent
   ],
   imports: [
     BrowserModule,

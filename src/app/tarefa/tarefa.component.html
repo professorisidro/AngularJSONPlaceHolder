@@ -1,0 +1,10 @@
+<input type="number" placeholder="Digite o ID da Tarefa" [(ngModel)]="idTarefa">
+<button (click)="buscarTarefa()">Pesquisar Tarefa</button>
+
+<div *ngIf='_myTask'>
+    <strong>Task ID: </strong>{{_myTask.id}} <br>
+    
+    <span *ngIf='_user'><strong >User: </strong>{{_user.name}} <br> </span>
+    <strong>Title: </strong>{{_myTask.title}} <br>
+    <strong>Completed: </strong>{{_myTask.completed}} <br>
+</div>
